@@ -1,6 +1,8 @@
 // import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import BudgetItem from "./components/BudgetItem";
 import Navbar from "./components/Navbar";
+import budgets from "./data";
 
 export default function Home() {
   return (
@@ -31,6 +33,14 @@ export default function Home() {
                 S&apos;inscrire
               </Link>
             </div>
+            <ul className="grid md:grid-cols-3 gap-4 mt-6 md:min-w-[1200px]">
+              {budgets.map((budget) => (
+                <Link href={""} key={budget.id}>
+                  {/* {budget.name} */}
+                  <BudgetItem budget={budget} enableHover={1} />
+                </Link>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const config: Config = {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["cupcake", "dark"],
   },
 };
 export default config;

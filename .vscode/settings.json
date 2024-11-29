@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "formulahendry.auto-rename-tag",
+  "material-icon-theme.activeIconPack": "react",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "WillLuke.nextjs.hasPrompted": true
+}
